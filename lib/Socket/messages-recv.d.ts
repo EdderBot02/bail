@@ -27,7 +27,7 @@ export declare const makeMessagesRecvSocket: (config: SocketConfig) => {
     }>;
     getUSyncDevices: (jids: string[], useCache: boolean, ignoreZeroDevices: boolean) => Promise<import("../WABinary").JidWithDevice[]>;
     createParticipantNodes: (jids: string[], message: proto.IMessage, extraAttrs?: BinaryNode["attrs"]) => Promise<{
-        nodes: BinaryNode[];
+        nodes: any[];
         shouldIncludeDeviceIdentity: boolean;
     }>;
     sendPeerDataOperationMessage: (pdoMessage: proto.Message.IPeerDataOperationRequestMessage) => Promise<string>;

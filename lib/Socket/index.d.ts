@@ -37,7 +37,7 @@ declare const makeWASocket: (config: UserFacingSocketConfig) => {
     }>;
     getUSyncDevices: (jids: string[], useCache: boolean, ignoreZeroDevices: boolean) => Promise<import("..").JidWithDevice[]>;
     createParticipantNodes: (jids: string[], message: import("../Types").WAProto.IMessage, extraAttrs?: import("..").BinaryNode["attrs"]) => Promise<{
-        nodes: import("..").BinaryNode[];
+        nodes: any[];
         shouldIncludeDeviceIdentity: boolean;
     }>;
     sendPeerDataOperationMessage: (pdoMessage: import("../Types").WAProto.Message.IPeerDataOperationRequestMessage) => Promise<string>;

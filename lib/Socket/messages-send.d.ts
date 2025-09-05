@@ -17,7 +17,7 @@ export declare const makeMessagesSocket: (config: SocketConfig) => {
     }>;
     getUSyncDevices: (jids: string[], useCache: boolean, ignoreZeroDevices: boolean) => Promise<JidWithDevice[]>;
     createParticipantNodes: (jids: string[], message: proto.IMessage, extraAttrs?: BinaryNode["attrs"]) => Promise<{
-        nodes: BinaryNode[];
+        nodes: any[];
         shouldIncludeDeviceIdentity: boolean;
     }>;
     sendPeerDataOperationMessage: (pdoMessage: proto.Message.IPeerDataOperationRequestMessage) => Promise<string>;

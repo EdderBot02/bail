@@ -38,7 +38,7 @@ export declare const makeBusinessSocket: (config: SocketConfig) => {
     }>;
     getUSyncDevices: (jids: string[], useCache: boolean, ignoreZeroDevices: boolean) => Promise<import("../WABinary").JidWithDevice[]>;
     createParticipantNodes: (jids: string[], message: import("../Types").WAProto.IMessage, extraAttrs?: BinaryNode["attrs"]) => Promise<{
-        nodes: BinaryNode[];
+        nodes: any[];
         shouldIncludeDeviceIdentity: boolean;
     }>;
     sendPeerDataOperationMessage: (pdoMessage: import("../Types").WAProto.Message.IPeerDataOperationRequestMessage) => Promise<string>;
