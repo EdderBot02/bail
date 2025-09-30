@@ -1,16 +1,16 @@
 export interface Contact {
-    /** ID either in lid or jid format **/
-    id: string;
-    /** ID in Lid (anonymous) format (@lid) **/
-    lid?: string;
-    /** ID in Phone Number format (@s.whatsapp.net)  **/
-    jid?: string;
+    /** ID either in lid or jid format (preferred) **/
+    id: string
+    /** ID in LID format (@lid) **/
+    lid?: string
+    /** ID in PN format (@s.whatsapp.net)  **/
+    phoneNumber?: string
     /** name of the contact, you have saved on your WA */
-    name?: string;
+    name?: string
     /** name of the contact, the contact has set on their own on WA */
-    notify?: string;
+    notify?: string
     /** I have no idea */
-    verifiedName?: string;
+    verifiedName?: string
     /**
      * Url of the profile picture of the contact
      *
@@ -18,6 +18,6 @@ export interface Contact {
      * null => if the profile picture has not been set (default profile picture)
      * any other string => url of the profile picture
      */
-    imgUrl?: string | null;
-    status?: string;
+    imgUrl?: string | null
+    status?: string
 }
